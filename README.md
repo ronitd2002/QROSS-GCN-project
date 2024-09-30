@@ -1,6 +1,5 @@
 # QROSS project :
 
-## Detailed report on the QROSS paper
-Abstract : 
+## Progress so far
 
 ## Problems encountered so far:
