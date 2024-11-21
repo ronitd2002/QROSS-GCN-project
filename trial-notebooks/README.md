@@ -1,4 +1,3 @@
-# Trial notebooks for the data
+# Naive Autoencoder
 
-### Interpretation:
-
+Imported data and ran it against naive autoencoder. 
