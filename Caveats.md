@@ -113,7 +113,9 @@ While the idea of using a list comprehension (`[model(graph_tensors[i]) for i in
 
 #### **Understanding Coordinate Normalization**:
 The formula:
+
 $[x_i, y_i] \rightarrow \left[\frac{x_i - \text{mean}(x)}{\text{stddev}(x)}, \frac{y_i - \text{mean}(y)}{\text{stddev}(y)}\right]$
+
 is commonly used to standardize features, ensuring they have zero mean and unit variance. This is beneficial for models like neural networks, which often perform better with normalized inputs.
 
 #### **Impact on GCN Outputs**
