@@ -1,5 +1,37 @@
 # Caveats that I have faced till now:
 
+general question about the laplacian matrix - what is the significance of the laplacian spectrum of a graph with respect to solving the travelling salesman problem? answer with context to the problem only? does the spectral graph theory matter when solving tsp? if so how can it be exploited? shortly, very shortly also mention what the degree matrix of a graph means at the end?
+
+Answer : **Significance of Laplacian Spectrum in TSP**
+
+The Laplacian spectrum of a graph is crucial in solving the Traveling Salesman Problem (TSP). The TSP is an NP-hard problem that involves finding the shortest possible tour that visits 
+each node exactly once and returns to the starting node.
+
+In the context of TSP, the Laplacian matrix represents the distances between nodes. The eigenvalues and eigenvectors of the Laplacian matrix provide insights into the graph's structure 
+and connectivity. Specifically:
+
+1. **Dominant Eigenvalue**: The dominant eigenvalue (usually the largest one) represents the total number of edges in the graph. A larger value indicates a more connected graph, which 
+is beneficial for TSP.
+2. **Eigenvectors**: Eigenvectors corresponding to smaller eigenvalues can be used to identify clusters or communities within the graph, which may help in finding good initial 
+solutions or heuristics for TSP.
+3. **Graph Partitioning**: The Laplacian matrix can be used to partition the graph into smaller subgraphs, each representing a subset of nodes. This partitioning can help in solving 
+TSP by reducing the search space.
+
+**Exploiting Spectral Graph Theory**
+
+Spectral graph theory can be exploited in TSP by:
+
+1. **Using Eigenvectors as Heuristics**: Eigenvectors corresponding to small eigenvalues can serve as heuristics for finding good initial solutions or improving existing ones.
+2. **Graph Partitioning**: Partitioning the graph using the Laplacian matrix can help in solving TSP by reducing the search space.
+3. **Spectral Clustering**: Applying spectral clustering techniques to the eigenvectors can identify clusters within the graph, which may lead to good solutions for TSP.
+
+**Degree Matrix**
+
+The degree matrix of a graph is a diagonal matrix where each entry on the diagonal represents the degree of the corresponding node. In other words, it counts the number of edges 
+incident on each node. The degree matrix is used in the construction of the Laplacian matrix and plays a crucial role in the analysis of the graph's connectivity and structure.
+
+---
+
 Question 1 :
 
 1. how do i know that the feature vector that I got is correct? is there a guarantee to the gcnconv and global_mean_pool?
